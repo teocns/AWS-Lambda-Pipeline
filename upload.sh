@@ -1,4 +1,10 @@
 #!/bin/bash
+git add *
+git commit -m "Release"
+git push
+
+echo "Done uploading to Github"
+
 s3_bucket_name="lambda-codebases"
 lambda_function_name='function_name'
 uuid=$(uuidgen)
